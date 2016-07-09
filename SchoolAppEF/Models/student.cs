@@ -14,6 +14,8 @@ namespace SchoolAppEF.Models
         public int sID { set; get; }
       
        // public int cId { set; get; }
+       [Required]
+       [MinLength(5),MaxLength(10)]
         public string sn { set; get; }
         public course crs { set; get; }
     }

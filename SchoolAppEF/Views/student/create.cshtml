@@ -17,6 +17,8 @@
         <div>
             @Html.LabelFor(model => model.sn)<br />
             @Html.EditorFor(model => model.sn)<br />
+            @Html.ValidationMessageFor(model=>model.sn)
+
         </div>
 
         <p>
