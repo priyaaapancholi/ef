@@ -1,0 +1,26 @@
+﻿@model SchoolAppEF.Models.student
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<h3>Are you sure?</h3>
+<dl>
+<dt>
+    @Html.DisplayNameFor(model=>model.sn)
+</dt>
+<dd>
+    @Html.DisplayFor(model=>model.sn)
+</dd>
+</dl>
+
+@using (Html.BeginForm())
+{
+  <div>
+      <input type="submit" value="Delete"/>
+    
+  </div>
+
+@Html.ActionLink("go to list", "sindex");
+}

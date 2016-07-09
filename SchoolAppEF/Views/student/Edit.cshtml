@@ -1,0 +1,25 @@
+﻿@model SchoolAppEF.Models.student
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    <h1>Student</h1>
+    @Html.HiddenFor(model=>model.sID)
+    <div>
+        @Html.LabelFor(model=>model.sn)
+        <div>
+
+            @Html.EditorFor(model=>model.sn)
+
+        </div>
+    </div>
+
+    <input type="submit" value="save"/>
+}
+<div>
+@Html.ActionLink("go back list","sindex")
+</div>

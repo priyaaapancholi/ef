@@ -1,0 +1,28 @@
+﻿@model SchoolAppEF.Models.student
+
+@{
+    ViewBag.Title = "create";
+}
+
+<h2>create</h2>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <h2>student</h2>
+        <div>
+            @Html.LabelFor(model => model.sID)<br/>
+            @Html.EditorFor(model => model.sID)<br/>
+            </div>
+        <div>
+            @Html.LabelFor(model => model.sn)<br />
+            @Html.EditorFor(model => model.sn)<br />
+        </div>
+
+        <p>
+            <input type="submit" value="create"/ >
+        </p>
+    </fieldset>
+    }
+
+    @Html.ActionLink("back to list", "sindex", "student");

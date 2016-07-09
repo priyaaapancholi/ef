@@ -1,0 +1,37 @@
+﻿@model SchoolAppEF.Models.student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h1>Details</h1>
+
+<dl>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.sID)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.sID)
+    </dd>
+
+
+
+    <dt>
+        @Html.DisplayNameFor(model => model.sn)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.sn)
+    </dd>
+</dl>
+
+
+
+   <div>
+
+       @Html.ActionLink("Edit ME", "Edit", new { id = Model.sID })
+     
+
+   </div> 
+@Html.ActionLink("go to list", "sindex")
+ 
